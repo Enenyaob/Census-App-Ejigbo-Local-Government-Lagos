@@ -92,3 +92,11 @@ This project demonstrates:
 * Dashboard analytics
 * Chart-based demographic visualization
 * Framework-free backend engineering (Core PHP)
+
+
+#🔐 Default Login (Demo)
+
+  For testing purposes, the default administrator credentials are:
+  
+  Username: Admin
+  Password: opennow
