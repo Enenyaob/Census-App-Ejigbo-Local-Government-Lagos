@@ -1,40 +1,94 @@
-# Census-App-Ejigbo-Local-Government-Lagos
-A secure PHP &amp; MySQL web application for collecting and managing ward level census data in Ejigbo (Oshodi-Isolo LGA), featuring operator login, validated data capture, geolocation support, and an administrative dashboard.
+# Census App – Ejigbo Local Government Lagos
 
+A secure, mobile-ready PHP & MySQL census management system for ward-level population data collection in Ejigbo, Oshodi-Isolo LGA, Lagos.
 
+The application is designed for **field operators using mobile devices** to capture validated census records with GPS location and accuracy data. Administrators access centralized dashboards with metrics and interactive demographic visualizations for planning and decision support.
 
-## Census App – Ejigbo Local Government Lagos
+Built with **Core PHP, MySQL, Bootstrap, and Chart.js**.
 
-A secure, database-driven census management application built with **Core PHP, MySQL, Bootstrap, and Chart.js** for ward-level population data collection in Ejigbo, Oshodi-Isolo LGA, Lagos.
+##  Project Overview
 
-The system enables field operators to capture validated census records with geolocation support and provides administrators with dashboard metrics and **interactive demographic visualizations** for population insights.
+This system supports real-time census data collection in the field using smartphones and tablets. It focuses on:
 
-This project demonstrates backend security practices, structured validation, prepared SQL statements, session control, and real-time statistical visualization.
+* Mobile usability
+* Accurate geolocation capture
+* Secure data submission
+* Role-based access control
+* Visual demographic analytics
 
+It demonstrates backend security practices, structured validation, prepared SQL statements, session control, and real-time statistical visualization.
+
+---
+
+##  Mobile Field Data Collection
+
+The application is optimized for **mobile device usage** by field operators:
+
+* Responsive Bootstrap interface
+* Works on smartphones and tablets
+* Designed for on-site household registration
+* Uses browser geolocation API
+* Captures:
+
+  * Latitude
+  * Longitude
+  * GPS accuracy (meters)
+* Accuracy checks enforced before submission
+* Location verification flags stored in database
+
+Mobile GPS capture improves reliability and helps validate where each census record was collected.
+
+##  User Roles & Access Control
+
+### Administrator
+
+* Create field oprators  
+* View all census records
+* Access global dashboards and charts
+* View full demographic summaries
+* System-wide metrics
+
+### Field Operator
+
+* Register census records in the field
+* Capture GPS location data
+* View only their submitted records
+* View personal census summaries
+* Restricted from global admin data
+
+---
 
 ## Features
 
-* Secure operator authentication & sessions
+* Secure authentication & session management
 * Role-based access control (Admin / Operator)
-* CSRF-protected census data entry
-* Session protection and route guarding
-* Strong server-side validation rules
+* CSRF-protected form submission
+* Route guarding
+* Strong server-side validation
 * Duplicate record detection
-* GPS latitude/longitude & accuracy capture
+* Mobile GPS geolocation capture
+* GPS accuracy validation threshold
 * Ward-based classification
-* Admin dashboard metrics
-* **Demographic visualization with Chart.js**
-
-  * Gender distribution (pie chart)
-  * Age group distribution (bar chart)
-  * Occupation distribution (bar chart)
-  * Disability status chart
-  * Ward population chart
+* Operator-specific summaries
+* Admin global dashboard
 * MySQL relational schema with foreign keys
-* Bootstrap responsive UI
+* Responsive Bootstrap UI
+* Interactive demographic charts using Chart.js
 
-## This project demonstrates secure multi-role system design, field data collection workflows, and real-time demographic visualization using core PHP and MySQL without a framework. Includes interactive demographic analytics dashboards using Chart.js to convert census records into visual population insights.
+### 📊 Demographic Visualizations
 
+* Gender distribution (pie chart)
+* Age group distribution (bar chart)
+* Occupation distribution
+* Disability status chart
+* Ward population distribution
 
-Just say: **“Make portfolio bullets.”**
+This project demonstrates:
 
+* Secure multi-role system design
+* Mobile field data collection workflows
+* GPS-based record verification
+* Data validation architecture
+* Dashboard analytics
+* Chart-based demographic visualization
+* Framework-free backend engineering (Core PHP)
